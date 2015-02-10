@@ -10,23 +10,27 @@
 #import "AFNetworking.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.button_1 addTarget:self action:@selector(sayHello) forControlEvents:UIControlEventTouchUpInside];
-    self.room_data = @[@"web", @"random", @"product", @"ops", @"mobile", @"marketing", @"market", @"hackathon", @"general", @"design"];
+    [self.button_1 addTarget:self action:@selector(shoot) forControlEvents:UIControlEventTouchUpInside];
+    [self.button_2 addTarget:self action:@selector(choose) forControlEvents:UIControlEventTouchUpInside];
 
 }
 
-- (void)sayHello {
+
+- (void)choose{
+    NSLog(@"haha, %@", self.content.text);
+}
+
+- (void)shoot {
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:@"https://mighty-hollows-6770.herokuapp.com"]];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    NSDictionary *parameters = @{@"content": @"FromXCode"};
+    NSDictionary *parameters = @{@"content": self.content.text};
     [manager POST:@"m-hubot/hackathon"
        parameters: parameters
          success:^(NSURLSessionDataTask *task, id responseObject) {

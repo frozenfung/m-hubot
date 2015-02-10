@@ -18,12 +18,13 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNb-pm-bYQ">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="53"/>
                                 <state key="normal" title="發射">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="147" y="546" width="106" height="30"/>
+                                    <rect key="frame" x="80" y="489" width="241" height="58"/>
                                 </variation>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hubot.png" translatesAutoresizingMaskIntoConstraints="NO" id="iuW-V7-FCf">
@@ -41,6 +42,41 @@
                                     <rect key="frame" x="153" y="92" width="95" height="48"/>
                                 </variation>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bBF-cb-YtT">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="140" y="361" width="185" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVj-Oq-Dnt">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="45" y="365" width="87" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Il8-Ac-J1u">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="45" y="407" width="65" height="24"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rd5-t6-EAe">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="none">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="140" y="407" width="185" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -48,6 +84,10 @@
                                 <exclude reference="fNb-pm-bYQ"/>
                                 <exclude reference="iuW-V7-FCf"/>
                                 <exclude reference="36I-aJ-Aq5"/>
+                                <exclude reference="bBF-cb-YtT"/>
+                                <exclude reference="eVj-Oq-Dnt"/>
+                                <exclude reference="Il8-Ac-J1u"/>
+                                <exclude reference="Rd5-t6-EAe"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -55,12 +95,18 @@
                                 <include reference="fNb-pm-bYQ"/>
                                 <include reference="iuW-V7-FCf"/>
                                 <include reference="36I-aJ-Aq5"/>
+                                <include reference="bBF-cb-YtT"/>
+                                <include reference="eVj-Oq-Dnt"/>
+                                <include reference="Il8-Ac-J1u"/>
+                                <include reference="Rd5-t6-EAe"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="M-hubot" id="JWL-kE-gVm"/>
                     <connections>
                         <outlet property="button_1" destination="fNb-pm-bYQ" id="OjX-8b-nCl"/>
+                        <outlet property="button_2" destination="Rd5-t6-EAe" id="Ubd-3w-aAH"/>
+                        <outlet property="content" destination="bBF-cb-YtT" id="Vbg-gb-pk8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
