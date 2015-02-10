@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29C34F18BA5ADCB5F7F48783 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A4CF3D16E63856DBF35382 /* libPods.a */; };
 		E51A9BBF1A8378AD009D95A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E51A9BBE1A8378AD009D95A0 /* main.m */; };
 		E51A9BC21A8378AD009D95A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E51A9BC11A8378AD009D95A0 /* AppDelegate.m */; };
 		E51A9BC51A8378AD009D95A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E51A9BC41A8378AD009D95A0 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		E51A9BCA1A8378AD009D95A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E51A9BC91A8378AD009D95A0 /* Images.xcassets */; };
 		E51A9BCD1A8378AD009D95A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E51A9BCB1A8378AD009D95A0 /* LaunchScreen.xib */; };
 		E51A9BD91A8378AE009D95A0 /* m_hubotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E51A9BD81A8378AE009D95A0 /* m_hubotTests.m */; };
+		E5B136271A890E1E00571EE4 /* hubot.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B136261A890E1E00571EE4 /* hubot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73A4CF3D16E63856DBF35382 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51A9BB91A8378AD009D95A0 /* m-hubot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "m-hubot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51A9BBD1A8378AD009D95A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E51A9BBE1A8378AD009D95A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,9 @@
 		E51A9BD21A8378AE009D95A0 /* m-hubotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "m-hubotTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51A9BD71A8378AE009D95A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E51A9BD81A8378AE009D95A0 /* m_hubotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = m_hubotTests.m; sourceTree = "<group>"; };
+		E5B136261A890E1E00571EE4 /* hubot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hubot.png; sourceTree = "<group>"; };
+		EE3AB1A63022A7FB6B277AA3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EEAE9E8CF9B62E0AC4D8E53C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C34F18BA5ADCB5F7F48783 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +67,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC21394A4889D24D7091542E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73A4CF3D16E63856DBF35382 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E51A9BB01A8378AD009D95A0 = {
 			isa = PBXGroup;
 			children = (
 				E51A9BBB1A8378AD009D95A0 /* m-hubot */,
 				E51A9BD51A8378AE009D95A0 /* m-hubotTests */,
 				E51A9BBA1A8378AD009D95A0 /* Products */,
+				F1B95FEAB9646BAF76827936 /* Pods */,
+				AC21394A4889D24D7091542E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +113,7 @@
 		E51A9BBC1A8378AD009D95A0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E5B136261A890E1E00571EE4 /* hubot.png */,
 				E51A9BBD1A8378AD009D95A0 /* Info.plist */,
 				E51A9BBE1A8378AD009D95A0 /* main.m */,
 			);
@@ -119,6 +137,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F1B95FEAB9646BAF76827936 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE3AB1A63022A7FB6B277AA3 /* Pods.debug.xcconfig */,
+				EEAE9E8CF9B62E0AC4D8E53C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E51A9BDC1A8378AE009D95A0 /* Build configuration list for PBXNativeTarget "m-hubot" */;
 			buildPhases = (
+				EEA64B104A3491FD1111C9C4 /* Check Pods Manifest.lock */,
 				E51A9BB51A8378AD009D95A0 /* Sources */,
 				E51A9BB61A8378AD009D95A0 /* Frameworks */,
 				E51A9BB71A8378AD009D95A0 /* Resources */,
+				ACEF0E77B1EE62354C8525D9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +230,7 @@
 			files = (
 				E51A9BC81A8378AD009D95A0 /* Main.storyboard in Resources */,
 				E51A9BCD1A8378AD009D95A0 /* LaunchScreen.xib in Resources */,
+				E5B136271A890E1E00571EE4 /* hubot.png in Resources */,
 				E51A9BCA1A8378AD009D95A0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +243,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACEF0E77B1EE62354C8525D9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEA64B104A3491FD1111C9C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E51A9BB51A8378AD009D95A0 /* Sources */ = {
@@ -343,6 +406,7 @@
 		};
 		E51A9BDD1A8378AE009D95A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE3AB1A63022A7FB6B277AA3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "m-hubot/Info.plist";
@@ -353,6 +417,7 @@
 		};
 		E51A9BDE1A8378AE009D95A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEAE9E8CF9B62E0AC4D8E53C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "m-hubot/Info.plist";
@@ -414,6 +479,7 @@
 				E51A9BDE1A8378AE009D95A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E51A9BDF1A8378AE009D95A0 /* Build configuration list for PBXNativeTarget "m-hubotTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +488,7 @@
 				E51A9BE11A8378AE009D95A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

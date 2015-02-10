@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
+@property (strong, nonatomic) IBOutlet UIButton *button_1;
 
 @end
 
